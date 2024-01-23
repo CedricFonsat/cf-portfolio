@@ -1,70 +1,101 @@
+@font-face {
+  font-family: qr-regular;
+  src: url("./assets/fonts/QR-Regular.otf");
+}
 
-.linear-wipe, .hover-menu:hover {
-    background: linear-gradient(to right, #000000 20%, rgb(53, 75, 223) 40%, rgb(53, 75, 223) 60%, #000000 80%);
-    background-size: 200% auto;
-    color: #000;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: shine 7s linear infinite;
-  }
-
-  @keyframes shine {
-    to {
-      background-position: 200% center;
-    }
+@font-face {
+    font-family: rage-road;
+    src: url("./assets/fonts/Road_Rage.otf");
   }
 
-  .slider {
-    position: relative;
-    display: grid;
-    place-items: center;
-    overflow: hidden;
+.qr-font {
+  font-family: qr-regular;
+}
+
+.rage-font{
+    font-family: rage-road;
+    color: #F8F7F3;
+    -webkit-text-stroke: .5px black;
+}
+
+.linear-wipe,
+.hover-menu:hover {
+  background: linear-gradient(
+    to right,
+    #000000 20%,
+    rgb(53, 75, 223) 40%,
+    rgb(53, 75, 223) 60%,
+    #000000 80%
+  );
+  background-size: 200% auto;
+  color: #000;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 7s linear infinite;
+}
+
+@keyframes shine {
+  to {
+    background-position: 200% center;
   }
-  .slider::before,
-  .slider::after{
-    position:absolute;
-    background-image:linear-gradient(to right,rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
-    content:'';
-    height:100%;width:25%;
-    z-index:2;pointer-events:none;
+}
+
+.slider {
+  position: relative;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+.slider::before,
+.slider::after {
+  position: absolute;
+  background-image: linear-gradient(
+    to right,
+    #F8F7F3 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  content: "";
+  height: 100%;
+  width: 25%;
+  z-index: 2;
+  pointer-events: none;
+}
+.slider::before {
+  left: 0;
+  top: 0;
+}
+.slider::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+
+.slide-track {
+  width: calc(120px * 20);
+  display: flex;
+  animation: scroll 20s linear infinite;
+  justify-content: space-between;
+}
+
+.slide {
+  width: 120px;
+  height: 60px;
+
+  display: grid;
+  place-items: center;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.slide:hover {
+  transform: scale(0.8);
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0px);
   }
-  .slider::before{
-    left:0;
-    top:0;
+  100% {
+    transform: translateX(calc(-120px * 10));
   }
-  .slider::after{
-    right:0;
-    top:0;
-    transform:rotateZ(180deg);
-  }
-  
-  .slide-track {
-    width: calc(120px * 20);
-    display: flex;
-    animation: scroll 20s linear infinite;
-    justify-content: space-between;
-  }
-  
-  .slide {
-    width: 120px;
-    height: 60px;
-  
-    display: grid;
-    place-items: center;
-    transition:0.5s;
-    cursor:pointer;
-  }
-  .slide:hover{
-    transform:scale(0.8)
-  }
-  
-  @keyframes scroll {
-    0% {
-      transform: translateX(0px);
-    }
-    100% {
-      transform: translateX(calc(-120px * 10));
-    }
-  }
-  
+}
