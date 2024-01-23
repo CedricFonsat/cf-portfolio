@@ -2,22 +2,6 @@
   font-family: qr-regular;
   src: url("./assets/fonts/QR-Regular.otf");
 }
-
-@font-face {
-    font-family: rage-road;
-    src: url("./assets/fonts/Road_Rage.otf");
-  }
-
-.qr-font {
-  font-family: qr-regular;
-}
-
-.rage-font{
-    font-family: rage-road;
-    color: #F8F7F3;
-    -webkit-text-stroke: .5px black;
-}
-
 .linear-wipe,
 .hover-menu:hover {
   background: linear-gradient(

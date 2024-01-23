@@ -17,6 +17,21 @@ const About = () => {
           <Asterisk size={70} color="white" />
         </p>
         <p className="text-[#F8F7F3] text-8xl font-bold">about</p>
+        <p>
+          <Asterisk size={70} color="white" />
+        </p>
+        <p className="text-[#F8F7F3] text-8xl font-bold">about</p>
+        <p>
+          <Asterisk size={70} color="white" />
+        </p>
+        <p className="text-[#F8F7F3] text-8xl font-bold">about</p>
+        <p>
+          <Asterisk size={70} color="white" />
+        </p>
+        <p className="text-[#F8F7F3] text-8xl font-bold">about</p>
+        <p>
+          <Asterisk size={70} color="white" />
+        </p>
       </div>
       <div className="mt-10 md:w-1/2 px-4">
         <p className="text-[#F8F7F3] text-center">

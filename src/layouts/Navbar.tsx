@@ -34,6 +34,7 @@ export const Navbar = () => {
         <p> CEDRIC FONSAT</p>
         <div className="flex">
           <a
+            target="blank"
             href="https://www.malt.fr/profile/cedricfonsat"
             className="py-2 px-4 mr-3 bg-black text-white rounded-md hidden md:flex items-center"
           >
