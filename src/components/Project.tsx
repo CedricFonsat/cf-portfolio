@@ -21,6 +21,14 @@ const Project = () => {
           <Asterisk size={70} color="black" />
         </p>
         <p className="text-8xl font-bold">projects</p>
+        <p>
+          <Asterisk size={70} color="black" />
+        </p>
+        <p className="text-8xl font-bold">projects</p>
+        <p>
+          <Asterisk size={70} color="black" />
+        </p>
+        <p className="text-8xl font-bold">projects</p>
       </article>
       <article className="mt-10">
         {projects.map(
@@ -41,7 +49,7 @@ const Project = () => {
                   </p>
                 </div>
                 <a
-                  className="flex md:border-2 md:py-2 md:px-4 md:rounded-3xl md:border-black"
+                  className={`flex md:border-2 md:py-2 md:px-4 md:rounded-3xl md:border-black`}
                   href={project.link}
                 >
                   Github <ArrowUpRight color="black" />

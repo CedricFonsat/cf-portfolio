@@ -24,18 +24,21 @@ const Footer = () => {
       <div className="w-full md:h-14 mt-3 md:flex py-2 md:py-0 justify-end">
         <div className="md:w-1/2 md:flex justify-around px-5">
           <a
+            target="blank"
             className="text-4xl flex mb-2 md:mb-0"
             href="https://www.linkedin.com/in/cedric-fonsat/"
           >
             Linkedin <ArrowUpRight />
           </a>
           <a
+            target="blank"
             className="text-4xl flex mb-2 md:mb-0"
             href="https://github.com/CedricFonsat"
           >
             Github <ArrowUpRight />
           </a>
           <a
+            target="blank"
             className="text-4xl flex mb-2 md:mb-0"
             href="https://www.malt.fr/profile/cedricfonsat"
           >

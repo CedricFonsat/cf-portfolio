@@ -5,7 +5,7 @@ const Header = () => {
     <header className="w-full md:h-96 mt-10 grid grid-cols-1 md:grid-cols-2 gap-4 bg-[#F8F7F3]">
       <div className=" p-6 ">
         <div className="relative mb-2">
-          <p className="text-6xl md:text-8xl font-bold">Developpeur</p>
+          <p className="text-6xl md:text-8xl font-bold">Developer</p>
           <p className="text-6xl md:text-8xl font-bold">Full Stack</p>
         </div>
         <div className="slider">
