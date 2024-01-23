@@ -1,11 +1,21 @@
 import './App.css'
+import About from './components/About'
+import Header from './components/Header'
+import Project from './components/Project'
+import Footer from './layouts/Footer'
+import { Navbar } from './layouts/Navbar'
 
 function App() {
 
   return (
-    <h1 className="text-3xl font-bold underline">
-    Hello world!
-  </h1>
+    <div>
+      <Navbar/>
+      <Header/>
+      {/* <About/> */}
+      <About/>
+      <Project/>
+      <Footer/>
+    </div>
   )
 }
 
