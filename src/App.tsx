@@ -8,10 +8,9 @@ import { Navbar } from './layouts/Navbar'
 function App() {
 
   return (
-    <div>
+    <div className='bg-[#F8F7F3]'>
       <Navbar/>
       <Header/>
-      {/* <About/> */}
       <About/>
       <Project/>
       <Footer/>
